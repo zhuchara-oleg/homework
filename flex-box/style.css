@@ -1,0 +1,49 @@
+html {
+  font-family: sans-serif;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+
+a {
+  text-decoration: none;
+  color: #111;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1220px;
+  min-height: 50px;
+  padding: 15px;
+  margin: 0 auto;
+  border-bottom: 1px solid #111;
+}
+
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-image {
+  width: 84px;
+  height: 45px;
+}
+
+.header-nav {
+  padding: 0;
+}
+
+.nav-items {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.last-child {
+  margin-right: 0;
+}
