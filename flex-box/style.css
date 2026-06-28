@@ -14,6 +14,7 @@ a {
 
 ul {
   list-style: none;
+  padding: 0;
 }
 
 .container {
@@ -36,14 +37,13 @@ ul {
 }
 
 .header-nav {
-  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
 }
 
-.nav-items {
-  display: inline-block;
-  margin-right: 20px;
-}
 
-.last-child {
-  margin-right: 0;
-}
+
+
+
+
