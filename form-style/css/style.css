@@ -107,7 +107,7 @@ fieldset {
 }
 
 .checkbox-input:checked::after {
-  background: url(./images/check-icon.svg) no-repeat center, #9e1fff;
+  background: url(../images/check-icon.svg) no-repeat center, #9e1fff;
 }
 
 .checkbox-text {
