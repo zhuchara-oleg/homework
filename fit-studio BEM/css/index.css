@@ -1,0 +1,283 @@
+.hero {
+  position: relative;
+  padding-top: 80px;
+}
+
+.hero::before {
+  bottom: 106px;
+  width: 100%;
+}
+
+.hero__container {
+  display: flex;
+  gap: 28px;
+}
+
+.hero__info {
+  display: flex;
+  flex-direction: column;
+  max-width: 492px;
+}
+
+.hero h1 {
+  margin-bottom: 40px;
+  font-family: Oswald, sans-serif;
+  font-weight: 600;
+  font-size: 62px;
+  line-height: 115%;
+  text-transform: uppercase;
+  color: #2c332f;
+} 
+
+.hero__info h1 strong {
+  font-weight: 600;
+  color: #3596ed;
+}
+
+.hero__info p {
+  margin-bottom: 140px;
+  max-width: 440px;
+}
+
+.hero__images {
+  position: relative;
+  display: flex;
+}
+
+.hero__choose {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid #535755;
+  padding: 22px;
+  max-width: 161px; 
+  background-color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  color: #2c332f;
+}   
+
+.hero__img {
+  width: 347px;
+  height: 513px;
+}
+
+.hero__img--man {
+  width: 353px;
+}
+
+.news__container {
+  display: flex;
+  gap: 28px;
+}
+
+.news__article {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 25%;
+  background: #fff;
+  border: 1px solid #d3cbd9;
+  max-width: 284px;
+  overflow: hidden;
+}
+
+.news__article img {
+  display: block;
+}
+
+.news__info {
+  padding: 20px 20px 0;
+  margin-bottom: 12px;
+}
+
+.news__date {
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.news__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #2c332f;
+}
+
+.news__article footer {
+  padding: 0 20px 20px;
+  margin-top: auto;
+}
+
+.news__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #3596ed;
+}
+
+.news__link::after {
+  content: "";
+  display: inline-block;
+  width: 22px;
+  height: 9px;
+  background-image: url(../images/arrow-icon.svg);
+  transition: transform 0.5s;
+}
+
+.news__link:hover::after {
+  transform: translateX(5px);
+}
+
+.faq {
+  position: relative;
+}
+
+.faq::before {
+  top: 215px;
+}
+
+.faq__container {
+  display: flex;
+  gap: 28px;
+}
+
+.faq__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #535755; 
+}
+
+details {
+  margin-bottom: 20px;
+  border-block: 1px solid #d3cbd9;
+}
+
+details:last-child {
+  margin-bottom: 0;
+}
+
+details[open] summary::after {
+  transform: rotate(180deg);
+}
+
+summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  list-style: none;
+  padding: 20px;
+  cursor: pointer;
+}
+
+summary::after {
+  content: " ";
+  display: inline-block;
+  flex-shrink: 0;
+  width: 15px;
+  height: 22px;
+  background: url(../images/arrow-down.svg) no-repeat center / cover;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+details > p {
+  padding: 0 20px 20px;
+}
+
+@media (width <= 1440px) {
+  .hero__images img {
+    width: 50%;
+  }
+}
+
+@media (width <= 992px) {
+  .hero::after {
+    display: none;
+  }
+
+  .hero_container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .hero__info{
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero h1 {
+    margin-bottom: 30px;
+    font-size: 52px;
+  }
+
+  .hero__info .text {
+    margin-bottom: 30px;
+    max-width: inherit;
+  }
+
+  .news__container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .news__article {
+    max-width: 350px;
+    flex-basis: 50%;
+  }
+
+  .news__article img {
+    width: 100%;
+  }
+  
+.faq::before {
+  display: none;
+}
+
+  .faq__container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+
+
+@media (width <= 768px) {
+  .hero h1 {
+    font-size: 50px;
+  }
+
+.news__article {
+    max-width: 400px;
+    flex-basis: 100%;
+  }
+}
+
+
+@media (width <= 576px) {
+  .hero {
+    padding-top: 60px;
+  }
+
+
+  .hero__info {
+    max-width: 410px;
+  }
+
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .hero__choose {
+    padding: 10px;
+    font-size: 14px;
+    max-width: 125px;
+  }
+}
