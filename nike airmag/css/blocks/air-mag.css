@@ -33,7 +33,7 @@
   flex-shrink: 0;
   width: 131px;
   height: 40px;
-  background-image: url("/icons/rectangle-decor-icon.svg");
+  background-image: url("../../icons/rectangle-decor-icon.svg");
   transform: translateX(-13px);
 }
 
@@ -100,6 +100,6 @@
   margin-bottom: 5px;
   width: 46px;
   height: 34px;
-  background-image: url(/icons/double-checkbox-icon.svg);
+  background-image: url("../../icons/double-checkbox-icon.svg");
   transform: translateX(-8px);
 }
