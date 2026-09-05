@@ -1,0 +1,52 @@
+.page {
+  font-family: var(--font-family), var(--second-family);
+  font-weight: 400;
+}
+
+.page__body {
+  padding-top: 108px;
+  min-width: 375px;
+}
+
+.container {
+  width: min(var(--container-width), 100% - var(--container-padding) * 2);
+  margin-inline: auto;
+}
+
+.img {
+  object-fit: cover;
+}
+
+.section-title {
+  font-size: 42px;
+  line-height: 125%;
+}
+
+.section-paragraph {
+  font-size: 13px;
+  line-height: 129%;
+}
+
+.text-main {
+  font-family: var(--font-family);
+}
+
+.text-second {
+  font-family: var(--second-family);
+}
+
+.text-main,
+.text-second {
+  font-weight: 400;
+  color: var(--second-color);
+}
+
+.title-md {
+  /* min-width 375px, max-width 1200px */
+  font-size: clamp(32px, 1.26rem + 3.15vw, 58px);
+}
+
+.title-sm {
+  /* min-width 375px, max-width 768px */
+  font-size: clamp(28px, 0.92rem + 3.56vw, 42px);
+}
