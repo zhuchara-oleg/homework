@@ -1,0 +1,29 @@
+:root {
+  /* font-family */
+  --font-family: "Inter", sans-serif;
+  --second-family: "ReadexPro", sans-serif;
+
+  /* color */
+  --bg-color: #dce5e2;
+  --second-color: #000;
+  --article-color: #4b4b4b;
+  --alteration-color: #000000b8;
+  --shadow-color: #00000040;
+
+  /* container */
+  --container-width: 1294px;
+  --container-padding: 15px;
+
+
+  /* transition */
+  --transition-time: 0.2s;
+
+
+  /* layers */
+  --layer-negative: -1;
+  --layer-0: 0;
+  --layer-1: 1;
+  --layer-2: 2;
+  --layer-3: 3;
+}
+
