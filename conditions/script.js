@@ -6,7 +6,7 @@ if (a % 2 === 0) {
   console.log('Число четное');
 } else {
   console.log('Число нечетное')
-}
+};
 
 // Задача 2.
 
@@ -52,38 +52,32 @@ if ((username === `admin` || username === `user`) && password === `123456`) {
 
 // Задача 4.
 
-let weight = +prompt(` Укажите вес посылки (в килограммах)`);
+const weight = +prompt(` Укажите вес посылки (в килограммах)`);
+const delivery = prompt(` Укажите тип доставки (Стандарт, Экспресс, Премиум)`);
 
 if (weight <= 0) {
-  alert('Некорректный вес посылки')
-};
-
-let delivery = prompt(` Укажите тип доставки (Стандарт, Экспресс, Премиум)`)
-
-if (delivery === `Стандарт`||delivery === `Экспресс`||delivery === `Премиум`);
-  else {
-    alert('Неверный тип доставки')
-  };
-
-  let price = weight < 1 ? 5 : (weight > 1 && weight <= 5) ? 10 : 15;
-
-const massagePrice = `${price}$`;
-
-  console.log(massagePrice);
-
+  alert('Некорректный вес посылки');
+} else {
+  const baseCost = weight < 1 ? 5 : weight <= 5 ? 10 : 15;
   let coefficient;
 
-switch (delivery) {
-  case 'Стандарт' : 
-    coefficient = 1;
-    break;
-  case 'Экспресс' : 
-    coefficient = 1.5;
-    break;
-  case 'Премиум' : 
-    coefficient = 2;
-    break;
+  switch (delivery) {
+    case `Стандарт`:
+      coefficient = 1;
+      break;
+    case `Экспресс`:
+      coefficient = 1.5;
+      break;
+    case `Премиум` :
+      coefficient = 2;
+      break;
+    default:
+      alert(`Неверный тип доставки`);
+      coefficient = null;
+  }
+  
+  if (coefficient !== null) {
+    const finalCost = baseCost * coefficient;
+    alert(`Итоговая стоимость доставки: ${finalCost}$`);
+  }
 }
-
-const totalCost = price * coefficient;
-alert(`Итоговая стоимость доставки: ${totalCost}$`);
